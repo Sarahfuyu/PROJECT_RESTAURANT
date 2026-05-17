@@ -1,38 +1,69 @@
 <!DOCTYPE html>
-<html land="en"></html>
+<html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport"
-    content="width=device-width,initial-scale=1.0" />
-</head style="font-family:courier;" >
-<style>
-body {
-    background-color: #D0D1E6;
-    font-family: cursive;
-    color: #D7B56B;
-    text-align: center;
-}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Bakery Images</title>
 
-h2 {
-    font-size: 32px;
-    font-style: italic;
-}
+    <style>
+        body {
+            background-color: #D0D1E6;
+            font-family: cursive;
+            color: #D7B56B;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
 
-p {
-    font-style: italic;
-    font-size: 20px;
-}
-</style>
-    <title>Document</title>MY BAKERY IMAGES<title></title><head><body>
-        <br>
-        <img src="assets/apples.jpeg">
-        <img src="assets/muffins.jpeg">
-        <img src="assets/banana.jpeg">
-        <img src="assets/bread.jpeg">
-        <img src="assets/cookies.jpeg">
-        <img src="assets/cornbread.jpeg">
-        <img src="assets/gfvg.jpeg">
-        
+        h1 {
+            font-size: 40px;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
 
-    </body></head></title></title>
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+       
+        .small {
+            width: 180px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+       
+        .medium {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+       
+        .large {
+            width: 450px;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
 </head>
+
+<body>
+
+    <h1>MY BAKERY IMAGES</h1>
+
+    <div class="gallery">
+        <img src="assets/apples.jpeg" class="small" alt="Apples">
+        <img src="assets/muffins.jpeg" class="medium" alt="Muffins">
+        <img src="assets/banana.jpeg" class="large" alt="Banana Bread">
+        <img src="assets/bread.jpeg" class="small" alt="Bread">
+        <img src="assets/cookies.jpeg" class="medium" alt="Cookies">
+        <img src="assets/cornbread.jpeg" class="large" alt="Cornbread">
+        <img src="assets/gfvg.jpeg" class="medium" alt="Bakery Item">
+    </div>
+
+</body>
+</html>
